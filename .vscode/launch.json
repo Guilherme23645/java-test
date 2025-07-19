@@ -5,6 +5,7 @@
       "name": "Launch Main",
       "request": "launch",
       "mainClass": "Main",
+      "args": "21 Java",
       "classPaths": [
         "${workspaceFolder}/bin",
         "${workspaceFolder}/src"
