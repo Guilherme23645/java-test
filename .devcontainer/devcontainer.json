@@ -1,0 +1,21 @@
+{
+    "name": "Java 21 Container",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "java.home": "/opt/java/openjdk",
+                "java.configuration.updateBuildConfiguration": "automatic",
+                "java.jdt.ls.java.home": "/opt/java/openjdk"
+            },
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vscjava.vscode-gradle"
+            ]
+        }
+    },
+    "forwardPorts": [8080],
+    "remoteUser": "vscode"
+}
