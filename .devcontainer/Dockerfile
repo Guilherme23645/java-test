@@ -4,10 +4,10 @@ RUN apt-get update && \
     apt-get install -y git curl unzip && \
     rm -rf /var/lib/apt/lists/*
 
-ARG GRADLE_VERSION=8.6
-RUN curl -s "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" -o gradle.zip && \
-    unzip gradle.zip && \
-    mv "gradle-${GRADLE_VERSION}" /opt/gradle && \
-    ln -s "/opt/gradle/bin/gradle" /usr/bin/gradle
+RUN curl -s "https://get.sdkman.io" | bash && \
+    chmod a+x "$HOME/.sdkman/bin/sdkman-init.sh"
+
+RUN bash -c "source $HOME/.sdkman/bin/sdkman-init.sh && \
+    sdk install gradle 8.6"
 
 WORKDIR /home/gui/java-test
