@@ -2,4 +2,5 @@ FROM gradle:8.6-jdk21-jammy
 
 WORKDIR /home/gui/java-test
 
-RUN apt-get update && apt-get install -y git
+RUN apt-get update && apt-get install -y git \
+    mkdir -p /home/gui/java-test/bin /home/gui/java-test/src
