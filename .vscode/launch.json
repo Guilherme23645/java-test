@@ -4,12 +4,8 @@
       "type": "java",
       "name": "Launch Main",
       "request": "launch",
-      "mainClass": "Main",
+      "mainClass": "${file}",
       "args": "21 Java",
-      "classPaths": [
-        "${workspaceFolder}/bin",
-        "${workspaceFolder}/src"
-      ]
     }
   ]
 }
