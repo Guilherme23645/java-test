@@ -1,8 +1,11 @@
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println("Configuring JDK in version " + args[0]);
-        System.out.println("Programming in " + args[1]);
+        // Reading input
+        Scanner scanner = new Scanner(System.in);
+        String x = scanner.next();
+        System.out.println(x);
+        scanner.close();
     }
 }
