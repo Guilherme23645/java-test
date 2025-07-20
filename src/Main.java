@@ -6,7 +6,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("What is your name? ");
         String x = scanner.next();
-        System.out.println("Hi, "+x+"!");
+        System.out.printf("Hi, %s!%n",x);
         scanner.close();
     }
 }
