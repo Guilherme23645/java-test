@@ -9,6 +9,9 @@ public class Main {
         System.out.println("Second number:");
         var b = scanner.nextInt();
         System.out.printf("%s + %s = %s%n",a,b,a+b);
+        System.out.println("Another number:");
+        var c = scanner.nextInt();
+        System.out.printf("Square root of %s is %s%n", c, Math.sqrt(c));
         scanner.close();
     }
 }
