@@ -14,9 +14,9 @@ public class Main {
         System.out.printf("Square root of %s is %s%n", c, Math.sqrt(c));
         System.out.println("Fourth number: ");
         var d = scanner.nextInt();
-        System.out.println("Fifth number");
+        System.out.println("Fifth number:");
         var e = scanner.nextInt();
-        System.out.printf("%s to the power of %s is %s",d,e,Math.pow(d,e));
+        System.out.printf("%s to the power of %s is %s%n",d,e,Math.pow(d,e));
         scanner.close();
     }
 }
