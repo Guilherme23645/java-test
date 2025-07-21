@@ -8,7 +8,7 @@ public class Main {
         var a = scanner.nextInt();
         System.out.println("Second number:");
         var b = scanner.nextInt();
-        System.out.printf("%s + %s = %s",a,b,a+b);
+        System.out.printf("%s + %s = %s%n",a,b,a+b);
         scanner.close();
     }
 }
