@@ -7,7 +7,7 @@ public class Main {
         System.out.println("Quanto e 2+2?");
         var result = scanner.nextInt();
         var isRight = result == 4;
-        System.out.printf("O resultado e 4. Voce acertou? (%s)", isRight);
+        System.out.printf("O resultado e 4. Voce errou? (%s)\n", !isRight);
         scanner.close();
     }
 }
