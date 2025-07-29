@@ -8,5 +8,6 @@ font-size: 1.5rem;
     <li>Arithmetic Operators;</li>
     <li>Bitwise Operators;</li>
     <li>Classes;</li>
-    <li>And so on and so forth.</li>
+    <li>Records;</li>
+    <li>And so forth.</li>
 </ul>
