@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) throws Exception {
         // Dealing with objects
+        Person.setTest("test");
         var male = new Person();
         male.setName("Robert");
         male.setAge(18);
@@ -9,5 +10,6 @@ public class Main {
         female.setAge(19);
         System.out.printf("Name: %s, Age: %s%n",male.getName(),male.getAge());
         System.out.printf("Name: %s, Age: %s%n",female.getName(),female.getAge());
+        System.out.printf("Static variable: %s%n",Person.getTest());
     }
 }
