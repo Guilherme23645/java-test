@@ -7,7 +7,7 @@ public class Main {
         var female = new Person();
         female.setName("Alice");
         female.setAge(19);
-        System.out.printf("Name: %s, Age: %s",male.getName(),male.getAge());
-        System.out.printf("Name: %s, Age: 5s",female.getName(),female.getAge());
+        System.out.printf("Name: %s, Age: %s%n",male.getName(),male.getAge());
+        System.out.printf("Name: %s, Age: %s%n",female.getName(),female.getAge());
     }
 }
