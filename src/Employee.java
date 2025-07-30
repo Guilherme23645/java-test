@@ -3,6 +3,7 @@ public class Employee {
     private String name;
     private String address;
     private int age;
+    private double salary;
 
     public String getCode() {
         return this.code;
@@ -34,5 +35,13 @@ public class Employee {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public double getSalary() {
+        return this.salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 }
