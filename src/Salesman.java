@@ -1,4 +1,4 @@
-public final class Salesman extends Employee {
+public class Salesman extends Employee {
     private double percentagePerSale;
     private double soldAmount;
 

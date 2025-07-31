@@ -1,4 +1,4 @@
-public final class Manager extends Employee {
+public class Manager extends Employee {
     private String login;
     private String password;
     private double commission;
@@ -39,7 +39,6 @@ public final class Manager extends Employee {
         return "MN"+super.getCode();
     }
 
-    @Override
     public double getFullSalary() {
         return super.getSalary() + this.commission;
     }
