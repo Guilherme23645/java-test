@@ -13,4 +13,9 @@ public final class Salesman extends Employee {
     public void setPercentage(double percentagePerSale) {
         this.percentagePerSale = percentagePerSale;
     }
+
+    @Override
+    public String getCode() {
+        return "SL"+super.getCode();
+    }
 }
