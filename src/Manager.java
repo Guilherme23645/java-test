@@ -34,4 +34,8 @@ public final class Manager extends Employee {
         this.commission = commission;
     }
 
+    @Override
+    public String getCode() {
+        return "MN"+super.getCode();
+    }
 }
