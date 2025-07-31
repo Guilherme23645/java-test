@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         // Dealing with inheritance and polymorphism
         Manager manager = new Manager("456","Richard","St Something",19,2349,"richard","1dA@43",1200);
-        Salesman salesman = new Salesman("789","Gabriel","St Something Else",19,1758,20);
+        Salesman salesman = new Salesman("789","Gabriel","St Something Else",19,1758,20,1220);
         printEmployee(manager);
         printEmployee(salesman);
     }
@@ -23,7 +23,10 @@ public class Main {
                 System.out.println(salesman.getSalary());
                 System.out.println(salesman.getName());
                 System.out.println(salesman.getPercentage());
+                System.out.println(salesman.getSoldAmount());
             }
         }
+        System.out.println(employee.getFullSalary(500));
+        System.out.println(employee.getFullSalary());
     }
 }
