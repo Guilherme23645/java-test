@@ -38,4 +38,9 @@ public final class Manager extends Employee {
     public String getCode() {
         return "MN"+super.getCode();
     }
+
+    @Override
+    public double getFullSalary() {
+        return super.getSalary() + this.commission;
+    }
 }
