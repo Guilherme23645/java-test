@@ -3,6 +3,13 @@ public final class Manager extends Employee {
     private String password;
     private double commission;
 
+    public Manager(String code,String name,String address,int age, int salary, String login, String password, double commission) {
+        super(code,name,address,age,salary);
+        this.login = login;
+        this.password = password;
+        this.commission = commission;
+    }
+
     public String getLogin() {
         return this.login;
     }
@@ -26,4 +33,5 @@ public final class Manager extends Employee {
     public void setCommission(double commission) {
         this.commission = commission;
     }
+
 }
