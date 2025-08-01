@@ -9,8 +9,6 @@ public class Main {
             new User("Elizabeth",34)
         );
 
-        users.forEach((User user) -> {
-            System.out.printf("Name: %s, Age: %s%n", user.name(),user.age());
-        });
+        users.forEach(user -> System.out.printf("Name: %s, Age: %s%n", user.name(),user.age()));
     }
 }
