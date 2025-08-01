@@ -1,9 +1,10 @@
 public class Main {
     public static void main(String[] args) {
         // Dealing with interfaces and lambda
-        MusicPlayer musicPlayer = new Computer();
+        Computer musicPlayer = new Computer();
 
         runMusic(musicPlayer);
+        runVideo(musicPlayer);
     }
 
     public static void runVideo(VideoPlayer videoPlayer) {
