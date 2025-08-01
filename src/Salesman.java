@@ -2,11 +2,11 @@ public class Salesman extends Employee {
     private double percentagePerSale;
     private double soldAmount;
 
-    public Salesman (String code,String name,String address,int age, int salary, double percentagePerSale, double soldAmount) {
+    /*public Salesman (String code,String name,String address,int age, int salary, double percentagePerSale, double soldAmount) {
         super(code,name,address,age,salary);
         this.percentagePerSale = percentagePerSale;
         this.soldAmount = soldAmount;
-    }
+    }*/
 
     public double getPercentage() {
         return this.percentagePerSale;
