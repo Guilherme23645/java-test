@@ -1,9 +1,9 @@
 package keyword;
 
 public class Address {
-    private String description;
+    String description = "description";
 
-    public String getDescription() {
+    String getDescription() {
         return description;
     }
 
