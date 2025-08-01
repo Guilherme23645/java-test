@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.function.Function;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,6 +10,10 @@ public class Main {
             new User("Elizabeth",34)
         );
 
-        users.forEach(user -> System.out.printf("Name: %s, Age: %s%n", user.name(),user.age()));
+        printStringValue(User::toString, users);
+    }
+
+    private static void printStringValue(Function<User, String> callback, List<User> users) {
+        users.forEach(u -> System.out.println(callback.apply(u)));
     }
 }
